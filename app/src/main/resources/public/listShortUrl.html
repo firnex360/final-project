@@ -61,8 +61,8 @@
             </li>
             <li class="table-row" th:each="urlList : ${urlList}">
                 <div>
-                    <a id="short-url" th:href="|http://url.firnex.tech/url/${urlList.shortUrl}|"
-                       th:text="|http://url.firnex.tech/url/${urlList.shortUrl}|"></a></div>
+                    <a id="short-url" th:href="|http://urls.firnex.tech/url/${urlList.shortUrl}|"
+                       th:text="|http://urls.firnex.tech/url/${urlList.shortUrl}|"></a></div>
                 <div class="col" th:text="${#strings.abbreviate(urlList.originalUrl, 70)}"></div>
                 <div class="col qrcode" th:attr="data-url=${urlList.shortUrl}"></div>
                 <div class="col">
@@ -120,7 +120,7 @@
                     return;
                 }
     
-                let fullUrl = "http://url.firnex.tech/url/" + shortUrl;
+                let fullUrl = "http://urls.firnex.tech/url/" + shortUrl;
     
                 new QRCode(qrElement, {
                     text: fullUrl,

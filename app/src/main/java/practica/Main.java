@@ -654,7 +654,7 @@ public class Main {
                 String shortUrl = encodeUrl((long) urlList.size() + 1);
                 url.setShortUrl(shortUrl);
 
-                shortUrl = "http://url.firnex.tech/url/" + shortUrl;
+                shortUrl = "http://urls.firnex.tech/url/" + shortUrl;
                 model.put("shortUrl", shortUrl);
                 model.put("originalUrl", originalUrl);
                 model.put("isAfterGenerated", true);
